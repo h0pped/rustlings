@@ -6,12 +6,16 @@
 // Execute `rustlings hint tests2` or use the `hint` watch subcommand for a
 // hint.
 
-// I AM NOT DONE
+#[derive(Debug, PartialEq)]
+struct Test {
+    a: i32,
+}
 
 #[cfg(test)]
 mod tests {
+    use crate::Test;
     #[test]
     fn you_can_assert_eq() {
-        assert_eq!();
+        assert_eq!(Test { a: 1 }, Test { a: 1 });
     }
 }
